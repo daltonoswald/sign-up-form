@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left">
+        <div class="left-odin">
+            <img src="imgs/odin-lined.png">
+            <p>Odin</p>
+        </div>
+        <div class="photo-credit">Photo by Halie West on Unsplash</div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="middle">
+            <div class="middle-header">Let's do this!</div>
+            <form id="myform" action="index.html" method="post" onSubmit="return checkPassword(this)">
+                <div class="form-row">
+                    <!-- <div class="form-first-name"> -->
+                    <div class="form-item">
+                        <label for="first-name">FIRST NAME</label>
+                        <input  id="first-name"
+                                name="first-name"
+                                type="text"
+                                placeholder="Thor"
+                                required>
+                    </div>
+                    <!-- <div class="form-last-name"> -->
+                    <div class="form-item">
+                        <label for="last-name">LAST NAME</label>
+                        <input  id="last-name"
+                                name="last-name"
+                                type="text"
+                                placeholder="Odinson" 
+                                required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-item">
+                        <div class="form-email">
+                            <label for="email">EMAIL</label>
+                            <input  id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="jane@doe.com"
+                                    required>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-phone">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input  id="phone"
+                                    name="phone"
+                                    type="tel"
+                                    pattern="[0-9]{10}"
+                                    placeholder="0123456789"
+                                    maxlength="10"
+                                    required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-item">
+                        <div class="form-password">
+                            <label for="password">PASSWORD</label>
+                            <input  id="password"
+                                name="password1"
+                                type="password"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-password">
+                            <label for="password">CONFIRM PASSWORD</label>
+                            <input  id="password"
+                                name="password2"
+                                type="password"
+                                required>
+                        </div>
+                    </div>
+                </div>
+            <!-- </form> -->
+        </div>
+        <div class="bottom">
+            <!-- <form> -->
+                <div class="form-row">
+                    <button>Create Account</button>
+                </div>
+                <div>
+                    Already have an account? <span class="log-in">Log in</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

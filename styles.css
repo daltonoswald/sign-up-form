@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    background-image: url("imgs/halie-west-25xggax4bSA-unsplash.jpg");
+    width: 45%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-odin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    font-family: Norse_bold;
+    color: white;
+    font-size: 75px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.left-odin p {
+    margin: 0;
+}
+
+.left-odin img {
+    height: 100px;
+}
+
+.photo-credit {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    margin: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 70%
+}
+
+.top {
+    background-color: rgb(224, 224, 224);
+    font-size: 32px;
+    font-weight: 500;
+    padding: 100px 250px 50px 50px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+}
+
+.middle-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+input, label {
+    display: block;
+}
+
+.form-item {
+    float: left;
+    margin-right: 20px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+    border: 3px solid #E5E7EB;
+    border-radius: 3px;
+    background-color: rgb(230, 230, 230);
+    height: initial;
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="tel"]:focus,
+.form-row input[type="password"]:focus {
+    outline: 0;
+    border: 2px solid rgb(97, 97, 255);
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgb(163, 163, 163);
+}
+
+/* .form-row input[type="text"]:focus::placeholder,
+.form-row input[type="email"]:focus::placeholder,
+.form-row input[type="tel"]:focus::placeholder,
+.form-row input[type="password"]:focus::placeholder{
+    color: transparent;
+}
+
+.form-row input:placeholder-shown:not(:focus):invalid {
+    border: 3px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid,
+.form-row input[type="tel"]:invalid {
+    outline: 0;
+    border: 2px solid red;
+    border-radius: 3px;
+} */
+
+.invalid input[type="text"],
+.invalid input[type="email"],
+.invalid input[type="tel"],
+.invalid input[type="password"] {
+    outline: 0;
+    border: 2px solid red;
+    border-radius: 3px; 
+}
+
+.form-row input[type="text"]:valid,
+.form-row input[type="email"]:valid,
+.form-row input[type="tel"]:valid,
+.form-row input[type="password"]:valid {
+    outline: 0;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+
+/* .form-row input[type="password"]:invalid {
+    outline: 0;
+    border: 2px solid red;
+    border-radius: 3px;
+} */
+
+.bottom {
+    background-color: rgb(224, 224, 224);
+    height: 100%;
+    /* margin-top: 24px;
+    margin-bottom: 24px; */
+    padding-left: 32px;
+}
+
+button {
+    border-radius: 8px;
+    outline: 0;
+    background-color: #596d48;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.log-in {
+    color:#596d48;
+}
+
+@font-face {
+    font-family: Norse_bold;
+    src: url("fonts/Norse-Bold.otf");
+}
