@@ -21,6 +21,22 @@ function validateForm(e) {
     }
 };
 
+myform.addEventListener('focusout', validateFocusOut);
+
+function validateFocusOut(e) {
+    const input = e.target;
+    if (input.checkValidity()) {
+
+    } else {
+        e.preventDefault();
+        if (input.checkValidity()) {
+            input.parentElement.classList.remove('invalid');
+        } else {
+            input.parentElement.classList.add('invalid');
+        }
+    }
+}
+
 function checkPassword(form) {
     password1 = form.password1.value;
     password2 = form.password2.value;

@@ -22,7 +22,7 @@
         </div>
         <div class="middle">
             <div class="middle-header">Let's do this!</div>
-            <form id="myform" action="index.html" method="post" onSubmit="return checkPassword(this)">
+            <form id="myform" action="#" method="post" onSubmit="return checkPassword(this)">
                 <div class="form-row">
                     <!-- <div class="form-first-name"> -->
                     <div class="form-item">
@@ -52,6 +52,7 @@
                                     name="email"
                                     type="email"
                                     placeholder="jane@doe.com"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                     required>
                         </div>
                     </div>
@@ -97,7 +98,7 @@
                     <button>Create Account</button>
                 </div>
                 <div>
-                    Already have an account? <span class="log-in">Log in</span>
+                    Already have an account? <a class="log-in" href="#">Log In</a>
                 </div>
             </form>
         </div>
