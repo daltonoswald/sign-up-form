@@ -22,6 +22,7 @@ function validateForm(e) {
 };
 
 myform.addEventListener('focusout', validateFocusOut);
+myform.addEventListener('blur', validateFocusOut);
 
 function validateFocusOut(e) {
     const input = e.target;
